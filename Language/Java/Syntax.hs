@@ -459,6 +459,7 @@ data ClassType
 data TypeArgument
     = Wildcard (Maybe WildcardBound)
     | ActualType RefType
+    | Diamond
   DERIVE
 
 -- | Wildcards may be given explicit bounds, either upper (@extends@) or lower (@super@) bounds.
